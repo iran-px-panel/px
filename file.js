@@ -1,52 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { connect } from "cloudflare:sockets";
 const GLOBAL_TRAFFIC_CACHE = new Map();
 const ACTIVE_CONNECTIONS_COUNT = new Map();
@@ -4431,7 +4382,7 @@ const HTML_TEMPLATES = {
             <div class="px-6 py-4 border-b border-gray-150 dark:border-amoled-border flex justify-between items-center bg-gray-50/50 dark:bg-amoled-bg">
                 <div class="flex items-center gap-2">
                     <div class="w-2.5 h-2.5 rounded-full bg-blue-500"></div>
-                    <h3 id="modal-title" class="font-bold text-gray-900 dark:text-zinc-100 text-base">ایجاد کاربر جدید</h3>
+                    <h3 id="modal-title" class="font-bold text-gray-900 dark:text-zinc-100 text-base">ایجاد کانفیگ </h3>
                 </div>
                 <button onclick="toggleModal(false)" class="p-1.5 rounded-md bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/50 text-red-600 dark:text-red-500 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all duration-200 shadow-sm">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -4446,7 +4397,7 @@ const HTML_TEMPLATES = {
                     <div class="flex flex-col gap-3">
                         <div class="space-y-2.5">
                             <div>
-                                <label class="block text-[11px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">نام کاربری</label>
+                                <label class="block text-[11px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">نام کانفیگ</label>
                                 <div class="relative">
                                     <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-gray-400">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -4456,7 +4407,7 @@ const HTML_TEMPLATES = {
                             </div>
                             <div class="grid grid-cols-2 gap-2.5">
                                 <div>
-                                    <label class="block text-[10px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">حجم (GB)</label>
+                                    <label class="block text-[10px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">حجم (گیگابایت)</label>
                                     <div class="relative">
                                         <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-gray-400">
                                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
@@ -4474,7 +4425,7 @@ const HTML_TEMPLATES = {
                                     </div>
                                 </div>
                                 <div>
-                                    <label class="block text-[10px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">سقف ریکوئست</label>
+                                    <label class="block text-[10px] font-bold text-gray-500 dark:text-zinc-400 mb-1 uppercase tracking-wider">سقف کل ریکوئست</label>
                                     <div class="relative">
                                         <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-gray-400">
                                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -4497,7 +4448,7 @@ const HTML_TEMPLATES = {
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <svg class="w-4 h-4 text-gray-500 dark:text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                                    <span class="text-[11px] font-bold text-gray-500 dark:text-zinc-400 uppercase tracking-wider">تمدید خودکار (۳:۳۰ بامداد)</span>
+                                    <span class="text-[11px] font-bold text-gray-500 dark:text-zinc-400 uppercase tracking-wider">تمدید خودکار (3:30 بامداد)</span>
                                 </div>
                                 <label class="relative inline-flex items-center cursor-pointer select-none">
                                     <input type="checkbox" id="input-auto-reset-toggle" onchange="toggleAutoResetInputs(this.checked)" class="sr-only peer">
@@ -4573,14 +4524,14 @@ const HTML_TEMPLATES = {
                             <div class="p-3 bg-gray-50 dark:bg-amoled-input border border-gray-200/60 dark:border-amoled-border rounded-md shadow-sm flex flex-col">
                                 <div class="flex items-center gap-1.5 mb-2">
                                     <span class="flex h-2 w-2 rounded-full bg-blue-500 shadow-sm"></span>
-                                    <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400">🔒TLS PORT</span>
+                                    <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400">TLS PORT</span>
                                 </div>
                                 <div class="grid grid-cols-3 gap-1.5 flex-1 content-start" id="tls-ports-list"></div>
                             </div>
                             <div class="p-3 bg-gray-50 dark:bg-amoled-input border border-gray-200/60 dark:border-amoled-border rounded-md shadow-sm flex flex-col">
                                 <div class="flex items-center gap-1.5 mb-2">
                                     <span class="flex h-2 w-2 rounded-full bg-amber-500 shadow-sm"></span>
-                                    <span class="text-[11px] font-bold text-amber-600 dark:text-amber-400">🔓Non-TLS PORT</span>
+                                    <span class="text-[11px] font-bold text-amber-600 dark:text-amber-400">Non-TLS PORT</span>
                                 </div>
                                 <div class="grid grid-cols-3 gap-1.5 flex-1 content-start" id="nontls-ports-list"></div>
                             </div>
@@ -4607,7 +4558,9 @@ const HTML_TEMPLATES = {
                                     <input type="checkbox" id="user-proxy-mode-toggle" onchange="toggleUserProxyMode(this.checked)" class="sr-only peer">
                                     <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-zinc-700 peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-green-700"></div>
                                 </label>
-                                <label class="block text-xs sm:text-sm font-bold text-gray-700 dark:text-zinc-300 cursor-pointer truncate" onclick="document.getElementById('user-proxy-mode-toggle').click()">ثابت کردن کشور و آیپی</label>
+                                <label class="block w-48 h-48 rounded-lg bg-gray-200 dark:bg-zinc-700 flex items-center justify-center text-xs sm:text-sm font-bold text-gray-700 dark:text-zinc-300 cursor-pointer truncate text-center p-4 shadow-md" onclick="document.getElementById('user-proxy-mode-toggle').click()">
+  ثابت کردن کشور و آیپی
+</label>
                             </div>
                             <div class="grid grid-cols-2 gap-2 mb-2 w-full">
                                 <button type="button" onclick="toggleDonateModal(true)" class="text-[11px] bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 px-2 py-2 rounded border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition font-black shadow-sm text-center whitespace-nowrap">اهدای پروکسی شخصی ❤️</button>
@@ -4638,7 +4591,7 @@ const HTML_TEMPLATES = {
                             </div>
                         </div>
                         <div id="user-cf-proxy-section" class="transition-opacity duration-300 pt-2 border-t-2 border-gray-300 dark:border-amoled-border mt-auto">
-                            <label class="block text-sm font-medium mb-1.5 text-gray-700 dark:text-zinc-300">ثابت کردن کشور (Cloudflare)</label>
+                            <label class="block text-sm font-medium mb-1.5 text-gray-700 dark:text-zinc-300">ثابت کردن کشور (کلودفلر)</label>
                             <div class="mb-2">
                                 <input type="text" id="user-location-search" oninput="filterUserLocations()" placeholder="جستجوی شهر، کشور یا IATA" class="w-full px-3 py-2 bg-gray-50 dark:bg-amoled-input border border-gray-200 dark:border-amoled-border rounded-md shadow-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 dark:text-zinc-200 transition">
                             </div>
@@ -4653,10 +4606,15 @@ const HTML_TEMPLATES = {
                         </div>
                     </div>
                 </div>
-                <div class="pt-4 flex gap-3 mt-4 border-t border-gray-200 dark:border-amoled-border">
-    <button type="button" onclick="toggleModal(false)" class="flex-1 py-2.5 bg-gradient-to-b from-white/90 via-rose-50/80 to-rose-100/70 dark:from-rose-950/40 dark:via-rose-900/30 dark:to-rose-800/40 border border-rose-200 dark:border-rose-800/50 hover:from-white hover:via-rose-50 hover:to-rose-200/80 dark:hover:from-rose-900/60 dark:hover:via-rose-800/50 dark:hover:to-rose-700/50 transition-all duration-200 text-rose-600 dark:text-rose-300 font-bold rounded-md text-sm shadow-sm hover:shadow">
-        انصراف
+<div class="pt-4 flex gap-3 mt-4 border-t border-gray-200 dark:border-amoled-border">
+    <button type="button" onclick="toggleModal(false)" class="flex-1 py-3.5 px-5 bg-gradient-to-b from-white/90 via-rose-50/80 to-rose-100/70 dark:from-rose-950/40 dark:via-rose-900/30 dark:to-rose-800/40 border border-rose-200 dark:border-rose-800/50 hover:from-white hover:via-rose-50 hover:to-rose-200/80 dark:hover:from-rose-900/60 dark:hover:via-rose-800/50 dark:hover:to-rose-700/50 transition-all duration-200 text-rose-600 dark:text-rose-300 font-bold rounded-md text-sm shadow-sm hover:shadow inline-flex items-center justify-center gap-2.5">
+        <span>انصراف</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
     </button>
+    
     <button type="submit" id="submit-btn" class="flex-1 py-2.5 bg-gradient-to-b from-white/90 via-green-50/80 to-green-100/70 dark:from-green-950/40 dark:via-green-900/30 dark:to-green-800/40 border border-green-200 dark:border-green-800/50 hover:from-white hover:via-green-50 hover:to-green-200/80 dark:hover:from-green-900/60 dark:hover:via-green-800/50 dark:hover:to-green-700/50 transition-all duration-200 text-green-600 dark:text-green-300 font-bold rounded-md text-sm shadow-sm hover:shadow">
         ایجاد کانفیگ
     </button>
@@ -4667,12 +4625,12 @@ const HTML_TEMPLATES = {
 <div id="ip-selector-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300 ease-out">
     <div class="w-full max-w-sm bg-white dark:bg-amoled-card border border-gray-200 dark:border-amoled-border rounded-md shadow-xl overflow-hidden transition-all transform duration-300 opacity-0 scale-95 ease-out">
         <div class="px-6 py-4 border-b border-purple-200 dark:border-purple-800/50 flex justify-between items-center bg-gradient-to-r from-purple-50/80 to-purple-100/60 dark:from-purple-950/30 dark:to-purple-900/20">
-    <h3 class="font-bold text-purple-800 dark:text-purple-300 text-sm flex items-center gap-2">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-        </svg>
-        برای دریافت کلیک کنید
-    </h3>
+    <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-rose-600 dark:from-amber-300 dark:via-orange-400 dark:to-rose-500 text-sm flex items-center gap-2">
+    <svg class="w-4 h-4 text-amber-500 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+    </svg>
+    <span>ایپی های تمیز بعضی موقع ها به مشکل بر میخورد</span>
+</h3>
     <button type="button" onclick="toggleIpSelectorModal(false)" class="p-1.5 rounded-md bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/50 text-red-600 dark:text-red-500 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all duration-200 shadow-sm hover:scale-110 active:scale-95">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -5819,7 +5777,7 @@ ${COMMON_TOAST_HTML}
                             '</td>' +
                             '<td class="p-1 border-r border-gray-100 dark:border-zinc-800">' +
 							    '<div class="flex flex-col gap-0.5 w-[90px] mx-auto">' +
-							        '<button onclick="copySubLink(\\'' + encodeURIComponent(user.username) + '\\')" class="w-full flex items-center justify-center gap-1 px-1 py-0.5 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 rounded text-[9px] font-bold transition border border-indigo-200 dark:border-indigo-800">' +
+							        '<button onclick="copySubLink(\\'' + encodeURIComponent(user.username) + '\\')" class="w-full flex items-center justify-center gap-1.5 px-2 py-1 bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/50 rounded-lg text-[10px] font-semibold transition-all duration-200 border border-orange-200 dark:border-orange-800 shadow-sm hover:shadow-md active:scale-[0.97]">' +
 							            '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>' +
 							            'ساب متنی' +
 							        '</button>' +
