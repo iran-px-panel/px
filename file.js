@@ -4280,7 +4280,7 @@ const HTML_TEMPLATES = {
         </div>
         <div class="relative flex-1 min-w-0 group">
     <div class="w-full px-2 py-1.5 bg-gray-50 dark:bg-amoled-input border border-gray-300 dark:border-amoled-border rounded-md text-xs text-gray-700 dark:text-zinc-300 cursor-help truncate">
-       پیام های ادمین
+       پیام ها
     </div>
      <div class="absolute inset-y-0 left-0 flex items-center pl-1.5 text-gray-500 dark:text-gray-400 pointer-events-none">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
