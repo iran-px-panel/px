@@ -4280,16 +4280,22 @@ const HTML_TEMPLATES = {
         </div>
         <div class="relative flex-1 min-w-0 group">
     <div class="w-full px-2 py-1.5 bg-gray-50 dark:bg-amoled-input border border-gray-300 dark:border-amoled-border rounded-md text-xs text-gray-700 dark:text-zinc-300 cursor-help truncate">
-       پیام ها
+       پیام های ادمین
+    </div>
+     <div class="absolute inset-y-0 left-0 flex items-center pl-1.5 text-gray-500 dark:text-gray-400 pointer-events-none">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4m0 4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+        </svg>
     </div>
 
     <div class="absolute bottom-full left-0 mb-2 w-72 p-3 rounded-lg bg-red-600 text-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
         <div class="font-semibold mb-1 flex items-center gap-2">
-            اپدیت هسته اصلی
+            اپدیت هسته سرور
         </div>
 
         <p class="text-xs leading-5 text-red-100">
-           سیستم ساخت کانفیگ ارتقا یافت - سرعت ها بیشتر شدن - از ایپی های تمیز تتا اطلاع ثانویه استفاده نکنید - هر گونه کپی برداری از پنل و ادیت آن ممنوع میباشد
+           سیستم ساخت کانفیگ ارتقا یافت - سرعت ها بیشتر شدن - از ایپی های تمیز تتا اطلاع ثانویه استفاده نکنید - هر گونه کپی برداری از پنل و ادیت آن ممنوع هستش. تمامی اطلاع رسانی ها در کانال تلگرام گزاشته میشوند
         </p>
 
         <div class="absolute top-full left-4 w-3 h-3 bg-red-600 rotate-45 -mt-1.5"></div>
